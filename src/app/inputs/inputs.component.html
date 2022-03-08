@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col" align="center">
+      <input type="number" class="form-control" placeholder="Peso" [(ngModel)]="peso" id="inputPeso" />
+      <input type="number" class="form-control" placeholder="Altura" [(ngModel)]="altura" id="inputAlt"/>
+      <button type="button" class="btn btn-primary" (click)="CalculoIMC()" >Calcular</button>
+    </div>
+</div>
+  
+  <div align="center">
+    <h4>Resultado: {{resultado.toFixed(1)}}</h4>
+  </div>
